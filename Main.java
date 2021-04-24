@@ -1,5 +1,10 @@
 import java.util.*;
 
+/*
+ * Author: Koply
+ * https://github.com/MusaBrt/legendary-tribble
+ * -- 24.04.2021 --
+ */
 public class Main {
 
     static final Scanner sc = new Scanner(System.in);
@@ -76,9 +81,9 @@ public class Main {
     }
 
     /**
-     * logic operators:      ||    -   &&     == bool        (ONLY)      [   bool   ]
-     * compare operators:    >= >  -  < <=    == decimal     (ONLY)      [  decimal ]
-     * equality operators:   ==    -   !=     == string, decimal, bool   [  string  ]
+     * logic operators:      ||    -   &&     == bool        (ONLY)      [   bool   as operatorType ]
+     * compare operators:    >= >  -  < <=    == decimal     (ONLY)      [  decimal as operatorType ]
+     * equality operators:   ==    -   !=     == string, decimal, bool   [  string  as operatorType ]
      */
     Process getHandler(Type entryType, Type operatorType) {
         if (operatorType == Type.DECIMAL && entryType != Type.DECIMAL) return null;
