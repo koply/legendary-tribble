@@ -4,7 +4,7 @@ public class Main {
 
     static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        new Test().run();
+        new Main().run();
     }
 
     public void run() {
@@ -14,10 +14,12 @@ public class Main {
             if (first.equalsIgnoreCase("exit")) {
                 break;
             }
-            o("otherValue: ");
-            String second = sc.nextLine();
+            
             o("operator: ");
             String operator = sc.nextLine();
+            
+            o("otherValue: ");
+            String second = sc.nextLine();
             
             Type entryType = detectType(first);
             Type operatorType = detectOperatorType(operator);
